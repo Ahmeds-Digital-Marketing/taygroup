@@ -411,151 +411,228 @@ ul {
   color: #14ffbc;
  }
 
-/* contact  */
+/*contact*/
 
-.right_conatct_social_icon{
-     background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
-}
-.contact_us{
-    background-color: #f1f1f1;
-    padding: 120px 0px;
-}
 
-.contact_inner{
-    background-color: #fff;
-    position: relative;
-    box-shadow: 20px 22px 44px #cccc;
-    border-radius: 25px;
-}
-.contact_field{
-    padding: 60px 340px 90px 100px;
-}
-.right_conatct_social_icon{
-    height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-.contact_field h3{
-   color: #000;
-    font-size: 40px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin-bottom: 10px
-}
-.contact_field p{
-    color: #000;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 35px;
-}
-.contact_field .form-control{
-    border-radius: 0px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-}
-.contact_field .form-control:focus{
-    box-shadow: none;
-    outline: none;
-    border-bottom: 2px solid #1325e8;
-}
-.contact_field .form-control::placeholder{
-    font-size: 13px;
-    letter-spacing: 1px;
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
-.contact_info_sec {
-    position: absolute;
-    background-color:rgb(16, 239, 243);
-    right: 1px;
-    top: 18%;
-    height: 340px;
-    width: 340px;
-    padding: 40px;
-    border-radius: 25px 0 0 25px;
-}
-.contact_info_sec h4{
-    letter-spacing: 1px;
-    padding-bottom: 15px;
+ul {
+  list-style: none;
 }
 
-.info_single{
-    margin: 30px 0px;
-}
-.info_single i{
-    margin-right: 15px;
-}
-.info_single span{
-    font-size: 14px;
-    letter-spacing: 1px;
+input {
+  overflow: hidden;
 }
 
-button.contact_form_submit {
-    background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
-    border: none;
-    color: #fff;
-    padding: 10px 15px;
-    width: 100%;
-    margin-top: 25px;
-    border-radius: 35px;
-    cursor: pointer;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-.socil_item_inner li{
-    list-style: none;
-}
-.socil_item_inner li a{
-    color: #fff;
-    margin: 0px 15px;
-    font-size: 14px;
-}
-.socil_item_inner{
-    padding-bottom: 10px;
+.section-title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 35px;
 }
 
-.map_sec{
-    padding: 50px 0px;
-}
-.map_inner h4, .map_inner p{
-    color: #000;
-    text-align: center
-}
-.map_inner p{
-    font-size: 13px;
-}
-.map_bind{
-   margin-top: 50px;
-    border-radius: 30px;
-    overflow: hidden;
+.sec-pad {
+  padding: 60px 0 0;
+  margin: 50px 0;
 }
 
-.abimg{
-  padding-left:25%;
-  padding-top:20%;
-  padding-bottom: 10%;
+.contact-sec {
+  align-item: center;
+  display: flex;
+  background-color: #5cbde466;
 }
 
-.abtxt{
-  /* padding-right:25%; */
-  padding-top:20%;
-  padding-bottom: 10%;
-  text-align: justify;
+.contact-sec .contact-ul li,
+.contact-ul b {
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  word-wrap: break-word;
 }
 
-.abtxt1{
-  /* padding-left:25%; */
-  padding-top:20%;
-  padding-bottom: 10%;
-  text-align: justify;
+.contact-sec .contact-ul i {
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
-
-.contact_info_sec a{
+.contact-detail a {
+  color: #000;
   text-decoration: none;
-  color: rgb(0, 0, 0);
 }
 
-.contact_info_sec a:hover{
-  color: rgb(240, 228, 228);
+.contact-sec .contact-ul li b:hover {
+  color: #f93;
+}
+
+.contact-sec .contact-ul li .fa-location-dot {
+  color: #f44337;
+  border: 2px solid #f4433790;
+}
+
+.contact-sec .contact-ul li .fa-phone {
+  color: #00b055;
+  border: 2px solid #00b05590;
+}
+
+.contact-sec .contact-ul li .fa-envelope {
+  color: #ff6347;
+  border: 2px solid #ff634790;
+}
+
+.contact-detail span {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.contact-detail span a {
+  font-size: 20px;
+  padding: 6px 12px;
+  color: #000;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+.contact-detail span .fb {
+  color: #3b5998;
+  border: 3px solid #3b5998;
+}
+.contact-detail span .fb:hover {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+.contact-detail span .insta {
+  color: #833ab4;
+  border: 3px solid #833ab4;
+}
+.contact-detail span .insta:hover {
+  color: #fff;
+  background-color: #833ab4;
+}
+
+.contact-detail span .twitter {
+  color: #00acee;
+  border: 3px solid #00acee;
+}
+.contact-detail span .twitter:hover {
+  color: #fff;
+  background-color: #00acee;
+}
+
+form.contFrm {
+  max-width: 396px;
+  margin: auto;
+}
+
+.inptFld {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  margin: 0 0 10px;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #000;
+}
+
+.inptFld:focus {
+  outline-offset: -4px;
+  outline: 1px solid #f93;
+}
+
+.contFrm textarea {
+  height: 75px;
+  padding-top: 5px;
+}
+.inptBtn {
+  height: 50px;
+  border: 0;
+  background: #00b055;
+  font-size: 14px;
+  color: #fff;
+  margin: auto;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* Responcive css Start */
+
+@media (max-width: 991px) {
+  .sec-pad {
+    padding: 20px 0 0px;
+  }
+
+  .contact-sec .contact-ul li,
+  .contact-ul b {
+    font-size: 18px;
+  }
+
+  .contact-sec .contact-ul i {
+    font-size: 14px;
+    padding: 6px;
+    margin-right: 6px;
+  }
+
+  .inptFld {
+    height: 40px;
+    margin: 0 0 10px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-detail span {
+    width: auto;
+  }
+  .contact-detail span a {
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #000;
+    border-radius: 50%;
+    margin: 0px 5px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-title {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .contact-sec {
+    border-radius: 10% 10% 0% 0% / 5% 5% 0% 0%;
+  }
+
+  .contact-sec .contact-ul i {
+    border: none;
+  }
+  .inptFld {
+    height: 36px;
+    margin: 0 0 8px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-sec .contact-ul li,
+  .contact-ul b {
+    font-size: 16px;
+  }
 }
 
 /* partners */
